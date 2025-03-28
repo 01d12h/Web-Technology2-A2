@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pac-Man Fan Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ✅ 네비게이션 -->
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#high-scores">HIGH SCORES</a>
+    <a href="#how-to-play">HOW TO PLAY</a>
+    <a href="#players">PLAYERS</a>
+  </nav>
+
+  <!-- ✅ 홈 섹션 (유령이 Pac-Man 쫓음) -->
+  <section id="home">
+    <img src="assets/Pac_man_logo.svg" class="Pac_man_logo" alt="Pac_man_logo" />
+    <div class="animation home-animation">
+      <img src="assets/Pacman2.png" class="home-pacman" alt="Pacman" />
+      <img src="assets/Blinky.png" class="home-ghost" alt="Blinky" />
+      <img src="assets/Pinky.png" class="home-ghost" alt="Pinky" />
+      <img src="assets/Inky.png" class="home-ghost" alt="Inky" />
+      <img src="assets/Clyde.png" class="home-ghost" alt="Clyde" />
+    </div>
+    <p class="insert-coins">INSERT COINS</p>
+  </section>
+
+<!-- ✅ 하이스코어 섹션 -->
+<section id="high-scores">
+    <h2 class="ready">READY!</h2>
+    <p class="highlight">THE 10 BEST PLAYERS</p>
+
+    <table class="score-table">
+        <thead>
+            <tr>
+                <th>RANK</th>
+                <th>SCORE</th>
+                <th>INITIALS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="rank-1">
+                <td>1ST</td>
+                <td>10,000</td>
+                <td>JRB</td>
+            </tr>
+            <tr class="rank-2">
+                <td>2ND</td>
+                <td>9,950</td>
+                <td>LAB</td>
+            </tr>
+            <tr class="rank-3">
+                <td>3RD</td>
+                <td>9,000</td>
+                <td>CJB</td>
+            </tr>
+            <tr class="rank-4">
+                <td>4TH</td>
+                <td>8,500</td>
+                <td>KED</td>
+            </tr>
+            <tr class="rank-5">
+                <td>5TH</td>
+                <td>8,000</td>
+                <td>JBB</td>
+            </tr>
+            <tr class="rank-6">
+                <td>6TH</td>
+                <td>7,750</td>
+                <td>SBB</td>
+            </tr>
+            <tr class="rank-7">
+                <td>7TH</td>
+                <td>7,250</td>
+                <td>MLB</td>
+            </tr>
+            <tr class="rank-8">
+                <td>8TH</td>
+                <td>6,850</td>
+                <td>AGD</td>
+            </tr>
+            <tr class="rank-9">
+                <td>9TH</td>
+                <td>6,500</td>
+                <td>KAD</td>
+            </tr>
+            <tr class="rank-10">
+                <td>10TH</td>
+                <td>6,250</td>
+                <td>BOB</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+  <!-- ✅ How to Play -->
+  <section id="how-to-play">
+    <div class="animation play-animation">
+      <img src="assets/Pacman.png" class="play-pacman" alt="Pacman" />
+      <img src="assets/Eaten.png" class="play-ghost" alt="Eaten" />
+      <img src="assets/Eaten.png" class="play-ghost" alt="Eaten" />
+      <img src="assets/Eaten.png" class="play-ghost" alt="Eaten" />
+    </div>
+
+    <h2>HOW TO PLAY</h2>
+
+    <div class="how-to-play-text">
+      <p><span class="yellow-text">SIMPLY SCORE AS MANY POINTS AS YOU</span></p>
+      <p>can by eating the small dots all around</p>
+      <p>the maze. 10 points per dot (240 of them).</p>
+      <p>Big points come when you eat 1 of the</p>
+      <p>4 Big flashing dots called</p>
+      <p>Energizers worth 50 points</p>
+      <p>located in each corner of the maze.</p>
+    </div>
+  </section>
+
+  <!-- ✅ Players & Points  -->
+  <section id="players">
+    <h2>PLAYERS</h2>
+    <h3>CHARACTER / NICKNAME</h3>
+
+    <div class="player">
+      <img src="assets/Blinky.png" class="ghost-icon" />
+      <span class="red">- SHADOW</span>
+      <span class="nickname red">"BLINKY"</span>
+    </div>
+    <div class="player">
+      <img src="assets/Pinky.png" class="ghost-icon" />
+      <span class="pink">- SPEEDY</span>
+      <span class="nickname pink">"PINKY"</span>
+    </div>
+    <div class="player">
+      <img src="assets/Inky.png" class="ghost-icon" />
+      <span class="blue">- BASHFUL</span>
+      <span class="nickname blue">"INKY"</span>
+    </div>
+    <div class="player">
+      <img src="assets/Clyde.png" class="ghost-icon" />
+      <span class="orange">- POKEY</span>
+      <span class="nickname orange">"CLYDE"</span>
+    </div>
+
+    <div class="points-section">
+      <div class="points-list">
+
+        <div class="point">
+          <p>200 PTS</p>
+          <img src="assets/Eaten.png" class="eaten-icon" />
+          <img src="assets/Eaten.png" class="eaten-icon" />
+          <img src="assets/Eaten.png" class="eaten-icon" />
+        </div>
+        <div class="point">
+          <p>50 PTS</p>
+          <div class="yellow-square large"></div>
+        </div>
+        <div class="point">
+          <p>10 PTS</p>
+          <div class="yellow-square small"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ 푸터 -->
+  <footer>
+    THIS SITE HAS NO AFFILIATION WITH THE ACTUAL PACMAN GAME
+  </footer>
+</body>
+</html>
